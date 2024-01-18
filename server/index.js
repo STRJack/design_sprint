@@ -25,7 +25,6 @@ app.use((req, res, next) => {
 });
 
 // Autres middlewares et routes
-app.use(cors({ origin: 'http://localhost:5173' }));
 app.options('*', cors());
 app.use(express.json({ limit: '50mb' }));
 
